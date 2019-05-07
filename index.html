@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Portfolio || Baji Shaik</title>
+
+    <link type="text/css" rel="stylesheet" href="ui.css"  />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+<header>
+
+  <div class="navigation">
+      <nav>
+          <!-- <a href="#" class=" hide-desktop">
+              <img src="static_files/ham.svg" alt="toggle menu" class="menu" id="menu">
+          </a> -->
+          <ul  >
+              <!-- <li id="exit" class="exit-btn show-mobile hide-desktop">
+                  <img src="static_files/exit.svg" alt="exit menu">
+              </li> -->
+          <li ><a href="#home">Home</a></li>
+          <li ><a  href="#projects">Portfolio</a></li>
+          <li><a  href="#stack">Skills</a></li>
+          <li><a  href="#hireme">Hire Me</a></li>
+          <li><a  href="#contactme">Contact Me</a></li>
+
+          </ul>
+
+        </nav>
+
+  </div>
+
+
+</header>
+
+
+<div class="body_wrapper">
+
+  <section id="home" class="home">
+    <div class="container" >
+
+      <img class="profile" src="static_files/profile.jpg" alt="profile_image">
+      </div>
+      <h1 class="center" >Baji Shaik</h1>
+      <p class=" center"><span class="typed-text"></span><span class="cursor typing">&nbsp;</span></p>
+  </section>
+
+
+ <!-- Technologies Stack -->
+
+<section id="stack" class="stack">
+  <h1>My Stack</h1>
+  <div class="techblock" >
+
+    <div class="item">
+      <h2>Android</h2>
+      <h5>I have been developing android apps for 1 year now, i use java and <b>Kotlin</b> </h5>
+    </div>
+
+    <div class="item">
+      <h2>Web</h2>
+      <h5>I like working with basic HTML, CSS, Javascript </h5>
+    </div>
+
+    <div class="item">
+      <h2>Backend</h2>
+      <h5>Mostly Flask Python for backend and <b>RESTAPI</b> but i also love NodeJS with express </h5> </h5>
+    </div>
+
+    <div class="item">
+      <h2>Voice Apps</h2>
+      <h5>I can build Actions for Google Assistant using <b>Dialogflow</b> and Skills for Alexa using <b>Alexa Skills Kit</b> </h5>
+    </div>
+  </div>
+</section>
+
+   <section id="projects" class="projects">
+
+    <h2 class="center ">Projects</h2>
+    <h3 class="center ">Web</h3>
+
+    <div class="project_gallery">
+
+      <div id="item-web" class="item-web">
+
+      <!-- Know A Cause -->
+
+      <div class="item">
+          <div class="item-desc">
+
+            <h2>Know A Cause</h2>
+            <div class=" item-mobile">
+
+              <img  src= "static_files/knowacause.png" alt="Know a Cause Home Page"/>
+  
+            </div>
+            <div class="item-mobile">
+
+              <p>An Event based Web Application that creates a profile for users
+                and takes their organizing events/posts info to display it to all other users and guests of website.
+                Guests and other Users can notify Event Organizer about their interest(RSVP).
+                This was my first ever go at web development.It is developed using python and hosted on Google App Engine.
+                </p>
+  
+                <div class="item-links">
+                  <a href="http://www.webportal-183112.appspot.com">View Project</a>
+                  <a href="http://www.webportal-183112.appspot.com">View Code</a>
+                </div>
+            </div>
+           
+
+          </div>
+
+          <div class="item-image">
+
+            <img  src= "static_files/knowacause.png" alt="Know a Cause Home Page"/>
+
+          </div>
+        </div>
+
+
+ <!-- Andoird Client Know A Cause -->
+
+ <div class="item">
+   
+  <div  class="item-image mobile">
+
+      <img src= "static_files/rest_knowacause.png" alt="Know a Cause Home Page"/>
+
+    </div>
+  <div class="item-desc">
+
+    <h2>REST API For Know A Cause</h2>
+    <div class=" item-mobile">
+
+        <img src= "static_files/rest_knowacause.png" alt="Know a Cause Home Page"/>
+
+      </div>
+    <p>
+      This is a RESTAPI supported know a cause application, it supports adding, new events/posts, notifications.. all
+       via rest API's using json web tokens as mechanism for security. it is developed using flask python and POSTGreSQL as database
+       hosted on Heroku
+      </p>
+
+      <div class="item-links">
+        <a href="http://knowacause.herokuapp.com/">View Project</a>
+        <a href="http://www.webportal-183112.appspot.com">View Code</a>
+      </div>
+
+  </div>
+
+
+</div>
+
+      </div>
+
+
+      <h3 class="center ">Android</h3>
+    <div id="item-android" class="item-android">
+
+   <!-- Dear Dairy -->
+   <div class="item">
+      <h2>Dear Diary</h2>
+      <div class="item-image">
+
+          <img src= "static_files/deardiary.png" alt="Know a Cause Home Page"/>
+
+        </div>
+      <div class="item-desc">
+
+
+        <p>An Android app that acts like a virtual diary but with security.
+          Its backend is implemented with firebase.
+          Its data is stored in local SQLite database and then synced to cloud firebase realtime
+          database. It is developed using Kotlin in Android Studio.
+          </p>
+
+          <div class="item-links">
+            <a href="#">View Project</a>
+            <a href="#">View Code</a>
+          </div>
+
+      </div>
+
+
+    </div>
+
+
+
+
+      <!-- Sleep tight -->
+      <div class="item">
+          <h2>Sleep Tight</h2>
+          <div class="item-image">
+
+              <img src= "static_files/sleep_tight.png" alt="Know a Cause Home Page"/>
+
+            </div>
+          <div class="item-desc">
+
+
+            <p>A Simple Android app to limit unnecessary disturbances. when ever you want zoneout, you can simply type in
+              your status which will be sent to the person that calls you. letting them know not to call you again unless important.
+              developed using kotlin.
+
+              </p>
+
+              <div class="item-links">
+                <a href="#">View Project</a>
+                <a href="#">View Code</a>
+              </div>
+
+          </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    </div>
+
+   </section>
+
+<section class="contactme" >
+<h2 class="center">Contact Me</h2>
+<div class="contactme_platforms">
+<a href="#">Twitter</a>
+
+<a href="#">Github</a>
+<a href="#">LinkedIn</a>
+<a href="#">Instagram</a>
+
+</div>
+</section>
+</div>
+
+<script src="main.js">
+
+
+</script>
+
+  </body>
+</html>

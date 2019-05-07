@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,900');
+
+* {
+ margin: 0;
+ padding: 0;
+ border: 0;
+ outline: 0;
+ font-size: 100%;
+
+ vertical-align: baseline;
+ background: transparent;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body{
+
+    width: 100%;
+    margin: auto;
+}
+
+
+
+
+h1{
+    font-size: 40px;
+    font-weight: 400;
+    color: #17191a;
+}
+
+h2{
+    font-size: 35px;
+    font-weight: 400;
+    color: #17191a;
+}
+
+
+
+h5{
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 16px;
+    color: #17191a;
+}
+
+p{
+    color: white;
+    opacity: 0.8;
+    font-weight: 70;
+    margin-top: 16px;
+    font-size: 20px;
+    word-spacing: 1px;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.exit-btn {
+    margin-bottom: 1em;
+    margin-top: -1.3em;
+    text-align: right;
+    padding: 0 1.4em;
+}
+
+.exit-btn img {
+    width: 15px;
+    cursor: pointer;
+}
+
+
+/* Nav */
+
+
+
+nav ul{
+
+
+background: none;
+margin-top:30px;
+position: fixed;
+right: 5%;
+display: flex;
+justify-content: space-between;
+
+
+}
+
+nav li{
+    margin-right: 5px;
+    list-style: none;
+    display: inline-block;
+
+}
+
+nav li a
+{
+
+    font-size: 18px;
+    text-decoration: none;
+    margin: 5px;
+    color: black;
+}
+
+
+/* profile image */
+
+img.profile{
+    display: block;
+    text-align: center;
+    position: relative;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* profile names */
+.center{
+
+    text-align: center;
+}
+
+
+.home{
+    padding-top: 60px;
+    background-image: url(static_files/background.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height:100vh;
+
+}
+
+.home p{
+    text-align: center;
+    position: absolute;
+    right: 0px;
+    overflow: hidden;
+    left: 10px;
+    color: #17191a;
+    font-size: 24px;
+    opacity: 1;
+    margin-top: 10px;
+    font-weight: 500;
+    word-spacing: 1px;
+    line-height: 30px;
+}
+
+.home span.typed-text{
+    color: #d35400;
+}
+
+.home span.cursor{
+    width: 3px;
+    background-color:black;
+    display: inline-block;
+    margin-left: 0.1rem;
+    animation: blink 1s infinite;
+}
+
+.home .cursor.typing {
+    animation: none;
+}
+
+@keyframes blink{
+    0% {background-color: black;}
+    49% {background-color: black;}
+    50% {background-color: transparent;}
+    99% {background-color: transparent;}
+    100% {background-color: black;}
+}
+
+.container{
+
+}
+
+
+.stack{
+padding: 20px;
+background-color:#fffa65;
+
+}
+
+.stack h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    visibility: visible;
+}
+
+.techblock{
+
+    display: flex;
+
+    padding: 20px;
+    text-align: center;
+
+    justify-content:space-evenly;
+}
+
+.techblock .item h5{
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+}
+
+
+/* Projects */
+
+.projects {
+
+    margin:15px 0px;
+}
+.projects h3{
+    font-size: 30px;
+    font-weight: 300;
+    color: #17191a;
+    padding: 10px 0px;
+}
+
+
+
+.item-web{
+    display: block;
+
+}
+
+     .item p {
+    color: #17191a;
+}
+
+
+
+
+
+#item-web .item{
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+
+}
+
+#item-web .item .item-desc{
+    flex-basis: 0;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+#item-web .item .item-image{
+    flex-basis: 0;
+    text-align: center;
+    padding: 20px;
+    flex-grow: 1;
+}
+.item-image img {
+    width: 100%;
+   height: auto;
+}
+
+.item-mobile img{
+   display: none;
+   padding: 0px;
+   width: 100%;
+   height: auto;
+}
+.mobile img{
+    align-content: center;
+    text-align: center;
+    width: 50%;
+    height: 80%;
+}
+
+.item-android {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+
+.item-android .item{
+    flex-basis: 0;
+
+    text-align: center;
+    padding: 0px 150px;
+    flex-grow: 1;
+}
+
+.item-android .item h2{
+    padding: 20px 0px;
+}
+
+.item-android .item-image img{
+    width: 100%;
+    height: auto;
+}
+
+/* Links */
+
+.item-desc .item-links{
+    display: flex;
+    padding: 10px 0px;
+    justify-content: center;
+}
+
+.item-web .item-desc .item-links a{
+
+    margin: 0px 60px ;
+}
+.item-android .item-desc .item-links a{
+    margin: 0px 20px ;
+}
+
+
+.item-desc .item-links a{
+    flex-basis: 0;
+    text-align: center;
+    color: white;
+
+    background-color: #17191a;
+    background:rgb(133, 216, 95);
+    padding: 10px 0px;
+    text-decoration: none;
+    flex-grow: 1;
+}
+
+
+.contactme{
+width: 100%;
+display: block;
+height: 300px;
+background:#4b4b4b;
+}
+
+.contactme h2{
+ position: relative;
+ color: white;
+top: 20%;
+}
+.contactme_platforms{
+    text-align: center;
+    position: relative;
+
+    top: 30%;
+}
+
+.contactme_platforms a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+}
+/* 
+.show-desktop {
+    display: block;
+    margin: 0 auto 13% auto;
+} */
+ .hide-desktop{
+    display: none;
+}
+
+
+.menu {
+    width: 25px;
+    margin-top: 45%;
+}
+
+/* Media Queries for Responsive Page */
+
+@media screen and (max-width:700px) {
+  .techblock{
+    display: block;
+    text-align: center;
+  }
+
+  .item-mobile img{
+    display: block;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+ }
+
+ .item-image img{
+     display: none;
+ }
+
+
+
+ #item-web .item{
+    padding: 10px 0px;
+    display: block;
+   
+
+    text-align: center;
+
+}
+
+.item-android {
+    display: block;
+   
+    text-align: center;
+}
+
+
+.item-android .item-image img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.item-android .item{
+  
+    padding: 5px;
+    text-align: center;
+    
+   
+}
+/* Links */
+.item-desc .item-links{
+    display: flex;
+    padding: 10px 0px;
+    justify-content: center;
+}
+
+.item-web .item-desc .item-links a{
+
+    margin: 0px 20px ;
+}
+.item-android .item-desc .item-links a{
+    margin: 0px 20px ;
+}
+
+
+.item-desc .item-links a{
+    flex-basis: 0;
+    text-align: center;
+    color: white;
+
+    background-color: #17191a;
+    background:rgb(133, 216, 95);
+    padding: 10px 0px;
+    text-decoration: none;
+    flex-grow: 1;
+}
+
+
+
+
+
+
+}
