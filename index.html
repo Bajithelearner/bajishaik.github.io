@@ -9,32 +9,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
+  
   <body>
-<header>
+    <header>
 
-  <div class="navigation">
-      <nav>
-          <!-- <a href="#" class=" hide-desktop">
-              <img src="static_files/ham.svg" alt="toggle menu" class="menu" id="menu">
-          </a> -->
-          <ul  >
-              <!-- <li id="exit" class="exit-btn show-mobile hide-desktop">
-                  <img src="static_files/exit.svg" alt="exit menu">
-              </li> -->
-          <li ><a href="#home">Home</a></li>
-          <li ><a  href="#projects">Portfolio</a></li>
-          <li><a  href="#stack">Skills</a></li>
-          <li><a  href="#hireme">Hire Me</a></li>
-          <li><a  href="#contactme">Contact Me</a></li>
-
-          </ul>
-
-        </nav>
-
-  </div>
-
-
-</header>
+      <div class="navigation">
+          <nav>
+              <a href="#" class="hide-on-desktop" id="ham">
+                  <img src="static_files/ham.svg" alt="toggle menu" class="menu" id="menu">
+              </a>
+              <ul class="hide-menu-mobile show-desktop-menu" id="nav">
+                  <li id="exit" class="exit hide-on-desktop">
+                      <img src="static_files/exit.svg" alt="exit menu">
+                  </li>
+              <li ><a href="#home">Home</a></li>
+              <li ><a  href="#projects">Portfolio</a></li>
+              <li><a  href="#stack">Skills</a></li>
+              <li><a  href="#hireme">Hire Me</a></li>
+              <li><a  href="#contactme">Contact Me</a></li>
+    
+              </ul>
+    
+            </nav>
+    
+      </div>
+    
+    
+    </header>
 
 
 <div class="body_wrapper">
@@ -238,11 +239,26 @@
 </div>
 </section>
 </div>
+<script src="main.js"></script>
+<script>
+    
+  var menu = document.getElementById('menu');
+  var nav = document.getElementById('nav');
+  var exit = document.getElementById('exit');
 
-<script src="main.js">
+  menu.addEventListener('click', function(e) {
+      nav.classList.toggle('hide-menu-mobile');
+      e.preventDefault();
+  });
 
+  exit.addEventListener('click', function(e) {
+      nav.classList.add('hide-menu-mobile');
+      e.preventDefault();
+  });
 
 </script>
+
+
 
   </body>
 </html>
