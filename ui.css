@@ -142,15 +142,61 @@ img.profile{
 }
 
 
+
+
 .home{
     padding-top: 60px;
-    background-image: url(static_files/background.png);
+    /* background-image: url(static_files/mobile_background.svg); */
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
     height:100vh;
 
 }
+
+
+svg.android{
+    position: absolute;
+    top:70px;
+    left: 15px;
+    width: 80px;
+    height: 80px;
+}
+
+svg.alexa{
+    position: absolute;
+    right:20px;
+    top: 90px;
+    width: 70px;
+    height: 70px;
+}
+
+
+svg.googlehome{
+    position: absolute;
+    bottom:220px;
+    left: 15px;
+    width: 70px;
+    height: 70px;
+}
+
+svg.api{
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+    width: 70px;
+    height: 70px;
+}
+
+svg.html{
+    position: absolute;
+    bottom:150px;
+    right: 15px;
+    width: 70px;
+    height: 70px;
+}
+
+
 
 .home p{
     text-align: center;
@@ -301,7 +347,7 @@ background-color:#fffa65;
     flex-basis: 0;
 
     text-align: center;
-    padding: 0px 150px;
+    padding: 0px 70px;
     flex-grow: 1;
 }
 
@@ -406,7 +452,27 @@ top: 20%;
 
 /* Media Queries for Responsive Page */
 
-@media screen and (max-width:700px) {
+
+@media screen and (max-width:1000px)
+{
+    .item-web .item-desc .item-links a{
+
+        margin: 0px 20px ;
+    }
+    .item-android .item-desc .item-links a{
+        margin: 0px 10px ;
+    }
+    .item-android .item{
+        flex-basis: 0;
+    
+        text-align: center;
+        padding: 0px 40px;
+        flex-grow: 1;
+    }
+
+}
+
+@media screen and (max-width:900px) {
   .techblock{
     display: block;
     text-align: center;
@@ -484,8 +550,56 @@ top: 20%;
 }
 
 
+@media only screen and (min-width:500px)
+{
+
+    svg.android{
+        position: absolute;
+        top:40px;
+        left: 50px;
+        width: 100px;
+        height: 100px;
+    }
+    
+    svg.alexa{
+        position: absolute;
+        right:30px;
+        top: 90px;
+        width: 100px;
+        height: 100px;
+    }
+    
+    
+    svg.googlehome{
+        position: absolute;
+        bottom:220px;
+        left: 30px;
+        width: 100px;
+        height: 100px;
+    }
+    
+    svg.api{
+        position: absolute;
+        bottom: 80px;
+        left: 180px;
+        width: 100px;
+        height: 100px;
+    }
+    
+    svg.html{
+        position: absolute;
+        bottom:150px;
+        right: 60px;
+        width: 100px;
+        height: 100px;
+    }   
+}
+
 @media only screen and (min-width:900px)
 {
+
+    
+
     .hide-on-desktop{
         display: none;
     }
@@ -527,8 +641,19 @@ top: 20%;
             padding: 0px 10px;
             color: black;
         }
-    
-  
+     
+        .home{
+            padding-top: 60px;
+            background-image: url(static_files/background.png);
+            background-size: cover;
+            background-position: top;
+            background-repeat: no-repeat;
+            height:100vh;
+        
+        }
+        .svg_background{
+            display: none;
+        }
 }
 
 
