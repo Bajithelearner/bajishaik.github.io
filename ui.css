@@ -191,7 +191,7 @@ svg.api{
 svg.html{
     position: absolute;
     bottom:150px;
-    fill: greenyellow;
+    stroke-width: 20px;
     right: 15px;
     width: 70px;
     height: 70px;
