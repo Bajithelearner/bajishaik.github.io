@@ -557,16 +557,16 @@ top: 20%;
         position: absolute;
         top:40px;
         left: 50px;
-        width: 130px;
-        height: 130px;
+        width: 150px;
+        height: 150px;
     }
     
     svg.alexa{
         position: absolute;
         right:30px;
         top: 90px;
-        width: 130px;
-        height: 130px;
+        width: 110px;
+        height: 110px;
     }
     
     
@@ -574,24 +574,24 @@ top: 20%;
         position: absolute;
         bottom:220px;
         left: 30px;
-        width: 130px;
-        height: 130px;
+        width: 110px;
+        height: 110px;
     }
     
     svg.api{
         position: absolute;
         bottom: 80px;
-        left: 180px;
-        width: 130px;
-        height: 130px;
+        left: 210px;
+        width: 110px;
+        height: 110px;
     }
     
     svg.html{
         position: absolute;
         bottom:150px;
         right: 40px;
-        width: 130px;
-        height: 130px;
+        width: 110px;
+        height: 110px;
     }   
 }
 
