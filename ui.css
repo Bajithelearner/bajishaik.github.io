@@ -167,8 +167,8 @@ svg.alexa{
     position: absolute;
     right:20px;
     top: 90px;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
 }
 
 
@@ -176,24 +176,25 @@ svg.googlehome{
     position: absolute;
     bottom:220px;
     left: 15px;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
 }
 
 svg.api{
     position: absolute;
     bottom: 260px;
-    left: 120px;
-    width: 100px;
-    height: 100px;
+    right: 190px;
+    width: 70px;
+    height: 70px;
 }
 
 svg.html{
     position: absolute;
     bottom:150px;
+    fill: greenyellow;
     right: 15px;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
 }
 
 
@@ -565,8 +566,8 @@ top: 20%;
         position: absolute;
         right:30px;
         top: 90px;
-        width: 110px;
-        height: 110px;
+        width: 130px;
+        height: 130px;
     }
     
     
@@ -574,24 +575,24 @@ top: 20%;
         position: absolute;
         bottom:220px;
         left: 30px;
-        width: 110px;
-        height: 110px;
+        width: 130px;
+        height: 130px;
     }
     
     svg.api{
         position: absolute;
         bottom: 80px;
-        left: 210px;
-        width: 110px;
-        height: 110px;
+        right:200px;
+        width: 130px;
+        height: 130px;
     }
     
     svg.html{
         position: absolute;
         bottom:150px;
         right: 40px;
-        width: 110px;
-        height: 110px;
+        width: 130px;
+        height: 130px;
     }   
 }
 
