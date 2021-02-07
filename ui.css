@@ -25,7 +25,11 @@ body{
 }
 
 
-
+h3{
+    font-size: 40px;
+    font-weight: 400;
+    color: #17191a;
+}
 
 h1{
     font-size: 40px;
@@ -472,6 +476,7 @@ top: 20%;
     }
 
 }
+
 
 @media screen and (max-width:900px) {
   .techblock{
